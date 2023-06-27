@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    
+    "vercel-build": "yarn global add node-gyp",
     "start": "node index.js"
   },
   "author": "",
