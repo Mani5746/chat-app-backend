@@ -15,6 +15,10 @@ const BASE_URL= process.env.BASE_URL
 app.use(cors());
 app.use(express.json());
 
+app.get('/',(req,res)=>{
+res.send("Server Started!")
+})
+
 app.use('/api/auth', userRoutes);
 app.use('/api/messages', messageRoute);
 
